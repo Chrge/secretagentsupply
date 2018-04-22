@@ -170,7 +170,7 @@ display: flex;
   display: none;
 }
 }
- @media only screen and (max-width: 1024px) and (orientation: portrait){
+ @media only screen and (max-width: 1024px) , (orientation: portrait){
 
 .bar{
      font-size: 2rem;
@@ -210,3 +210,21 @@ display: flex;
   text-align: center;
 }
 }
+ @media only screen and (max-width: 480px) and (orientation: portrait){
+   .item-container{
+     width: 480px;
+     margin: 10rem auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: space-between;
+     text-align: center;
+     border: 10px solid blue;
+   }
+   .white-container{
+     height: auto;
+     width: 480px;
+     display: flex;
+     flex-direction: column;
+   }
+ }
